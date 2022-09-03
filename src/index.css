@@ -3,3 +3,7 @@ html,body{
   padding: 0;
   box-sizing: border-box;
 }
+
+.logo{
+  transform: scale(2);
+}
