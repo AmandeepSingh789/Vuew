@@ -2,7 +2,7 @@ import React from 'react'
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 import vuew from '../assets/VUEW.png'
-
+import SearchBar from './SearchBar';
 // Stack  is MUI;s version of flex
 
 const Navbar = () => (
@@ -14,6 +14,7 @@ const Navbar = () => (
         <Link to="/" style={{display:'flex',alignItems:'center'}}>
             <img src={vuew} alt="logo" height={45} className='logo'/>
             </Link>
+        <SearchBar />
     </Stack>
     
   

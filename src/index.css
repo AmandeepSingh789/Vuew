@@ -5,5 +5,11 @@ html,body{
 }
 
 .logo{
-  transform: scale(2);
+  transform: scale(2.5);
+}
+
+.search-bar{
+  border:none;
+  outline:none;
+  width:350px;
 }
