@@ -6,7 +6,8 @@ html,body{
 }
 
 .logo{
-  transform: scale(2.5);
+  transform: scale(1.5);
+  margin-left: 15px;
 }
 
 .search-bar{
@@ -64,9 +65,21 @@ html,body{
   .category-btn{
     margin: 10px;
   }
+  .logo{
+    margin-left: 10px;
+  }
+  .search-bar{
+    width:200px;
+  }
 }
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
     overflow: auto !important;
+  }
+  .search-bar{
+    width:150px;
+  }
+  .logo{
+    margin-left: 5px;
   }
 }
