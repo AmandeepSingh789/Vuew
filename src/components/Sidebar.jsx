@@ -3,11 +3,12 @@ import { Stack } from '@mui/material'
 import { categories } from './constants'
 
 const selectedCategory='New'
+
 const Sidebar = () => {
   return (
     <Stack direction="row"
     sx={{
-        overflowY:'auto',
+        overflowY:'scroll',
         height:{sx:"auto", md:'95%'},
         flexDirection:{md:'column'},}} >
         {categories.map((category)=>(

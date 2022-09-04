@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import { Box, Stack, Typography} from '@mui/material'
 import { borderRight } from '@mui/system'
 import Sidebar from './Sidebar.jsx'
+import Videos from './Videos.jsx'
 
 const Feed = () => {
   return (
@@ -17,6 +18,14 @@ const Feed = () => {
 
         Copyright 2022 Vuew Media
       </Typography>
+    </Box>
+    <Box p={2} sx={{overflowY:'auto',height:'90vh ' ,flex:2}}>
+    <Typography variant ='h4' fontWeight='bold' mb={2}sx={{color:'white'}}>
+      New
+      <span style ={{color:'#0282a2',marginLeft:'8px'}}>videos</span>
+    </Typography>
+
+    <Videos />
     </Box>
   </Stack>
   )
