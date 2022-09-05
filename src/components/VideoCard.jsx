@@ -23,7 +23,7 @@ const VideoCard = ({ video: {id:{
     }}>
     <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <Typography variant='subtitle1' fontWeight='bold' color ='#fff'>
-            {snippet?.title.slice(0,60) || demoVideoTitle.slice(0,60)}
+            {snippet?.title.slice(0,60) || demoVideoTitle.slice(0,60)}...
         </Typography>
     </Link>
 

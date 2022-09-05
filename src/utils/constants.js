@@ -16,6 +16,7 @@ import ScoreboardTwoToneIcon from '@mui/icons-material/ScoreboardTwoTone';
 
 export const categories = [
     { name: 'New', icon: <HomeTwoToneIcon />, },
+    { name: 'Kalamkaar ', icon: <CodeTwoToneIcon />, },
     { name: 'Coding', icon: <CodeTwoToneIcon />, },
     { name: 'ReactJS', icon: <CodeTwoToneIcon />, },
     { name: 'NextJS', icon: <CodeTwoToneIcon />, },
