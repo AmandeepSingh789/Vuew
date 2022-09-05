@@ -4,7 +4,7 @@ import { categories } from '../utils/constants'
 
 
 const Sidebar = ({selectedCategory, setSelectedCategory}) => {
-    
+
   return (
     <Stack direction="row"
     sx={{
@@ -13,6 +13,7 @@ const Sidebar = ({selectedCategory, setSelectedCategory}) => {
         flexDirection:{md:'column'},}} >
         {categories.map((category)=>(
             <button className='category-btn'
+            onClick={()=> setSelectedCategory(category.name)}
             style={{
                 background:category.name===selectedCategory && 'linear-gradient(286deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 0%, rgba(2,130,162,1) 49%, rgba(3,152,158,1) 68%)',
                 color:'white'
