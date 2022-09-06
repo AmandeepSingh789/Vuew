@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import { Box, Stack, Typography} from '@mui/material'
-import { borderRight } from '@mui/system'
+import { Box, Typography} from '@mui/material'
 import {  Videos } from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 import { useParams } from 'react-router-dom'

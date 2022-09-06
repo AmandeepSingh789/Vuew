@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
 import { Link, useParams } from 'react-router-dom'
 import { Typography,Box,Stack } from '@mui/material'
-import { CheckCircle, SignalCellularNullTwoTone } from '@mui/icons-material'
+import { CheckCircle } from '@mui/icons-material'
 import {Videos} from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
-import { ClassNames } from '@emotion/react'
 import Loader from '../assets/Loader.jsx'
 
 const VideoDetail = () => {
