@@ -4,7 +4,10 @@ html,body{
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 .logo{
   transform: scale(1.5);
   margin-left: 15px;
@@ -92,7 +95,3 @@ html,body{
   }
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
