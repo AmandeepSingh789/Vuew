@@ -1,11 +1,12 @@
 import React from 'react'
 import {Stack, Box} from '@mui/material'
 import {ChannelCard,VideoCard} from './'
-const Videos = ({videos}) => {
-    console.log(videos);
+const Videos = ({videos , direction}) => {
+    
+  if(!videos?.length) return 'Loading';
   return (
     
-    <Stack direction ='row' flexWrap='wrap'
+    <Stack direction ={direction || "row"} flexWrap='wrap'
     justifyContent='start' gap={2}>
         
         {videos.map((item,idx)=> (
