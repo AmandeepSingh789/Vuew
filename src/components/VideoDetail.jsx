@@ -6,6 +6,7 @@ import { CheckCircle, SignalCellularNullTwoTone } from '@mui/icons-material'
 import {Videos} from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 import { ClassNames } from '@emotion/react'
+import Loader from '../assets/Loader.jsx'
 
 const VideoDetail = () => {
 
@@ -21,7 +22,8 @@ const VideoDetail = () => {
   },[id])
 
   
-  if(!videoDetail?.snippet) return 'Loading...';
+  if(!videoDetail?.snippet) return <Loader />;
+
   const {snippet: {title, channelId, channelTitle},statistics :{viewCount,likeCount}}=videoDetail
   return (
     <Box minHeight='95vh'>
